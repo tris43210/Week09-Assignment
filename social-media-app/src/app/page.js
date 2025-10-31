@@ -16,7 +16,9 @@ export default async function Home() {
             <div key={item.id}>
               <Image src={item.posturl} alt={item.posttext} width={300} height={300}/>
               <div className="timeline-post-info">
-                <h2>{item.username}</h2>
+                <Link>
+                  <h2>{item.username}</h2>
+                </Link>
               </div>
               <div className="post-info">
                 <p>{item.posttext}</p>
